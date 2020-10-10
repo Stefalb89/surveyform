@@ -1,0 +1,54 @@
+<h1 id="title">Survey Form by Stefan Iulian</h1>
+<p id="description">Fill with your Details: </p>
+<form id="survey-form">
+    <label for="name" class="labels" id="name-label">* Name</label>
+    <input name="name" type="text" id="name" placeholder="Enter Your Name" class="input" required><br>
+    <label for="email" class="labels" id="email-label">* Email</label>
+    <input name="email" type="email" id="email" placeholder="Enter your email" class="input" required><br>
+    <label for="number" class="labels" id="number-label">* Number</label>
+    <input name="number" type="number" id="number" placeholder="Enter your age" class="input" min="1" max="100" required><br>
+    <label for="currentPos" class="labels">It's correct my form survey?</label>
+    <select class="input" id="dropdown" name="currentPos">
+        <option disabledValue>Select an option</option>
+        <option value="student">Yes</option>
+        <option value="fullT">Not</option>
+        <option value="partT">I'm not sure</option>
+    </select><br>
+    <label for="story">If you don't like something please reply:</label> <textarea id="story" name="story"
+                                                                                   rows="2" cols="20">
+</textarea>
+
+
+    <div>
+
+        <input type="radio" id="huey" name="drone" value="huey"
+               checked>
+        <label for="huey">False</label>
+
+    </div>
+
+    <div>
+
+        <input type="radio" id="dewey" name="drone" value="dewey">
+        <label for="dewey">True</label>
+
+    </div>
+
+    <div>
+        <input type="radio" id="louie" name="drone" value="louie">
+        <label for="louie">Unknown</label>
+
+    </div>
+
+    <fieldset>
+        <legend>Coding Languages i have used : </legend>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> JavaScript</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> HTML</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> CSS</label><br>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit">
+</form>
